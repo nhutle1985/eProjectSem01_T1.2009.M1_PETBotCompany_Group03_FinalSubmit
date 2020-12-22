@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="URG.css">-->
+<style>
+        .nav a {
+        padding-top:0px; 
+      }
+      .col-md-3, .col-md-5, .col-md-9, .col-md-7, .col-md-10, .col-md-6 {
+        border: none;
+      }
+      .form-horizontal .form-group {
+        text-align: justify;
+      
+      }
+</style>
+
+
+</head>
+<body>
+  <div class="companyName"> PETBot COMPANY</div>
+
+    <nav class="nav">
+        <a href="Home.html"> HOME </a>
+        <a href="Product.html"> PRODUCT </a>
+        <a href="ContactUs.html"> CONTACT US </a>
+        <a href="CreateAcc.html" class="active"> REGISTER </a>
+        <a href="login.html"> LOGIN </a>
+        <a href="SiteMap.html"> SITE MAP </a>
+    </nav>
+   
+ <div class="container" style="background-color:lavender">
+
+    <form class="col-md-6 col-md-offset-3" 
+    action="javascript:alert('Thanks for your Register. Please login your account!');location.href='login.html'"
+          id="contactForm" method="post" class="form-horizontal">
+          <caption><h2 style="text-align: center;font-family: 'ultra', serif;">Create an Account</h2></caption>
+          <div class="form-group">
+            <label class="col-md-3 control-label">First Name</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="firstName" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Last name</label>
+          <div class="col-md-9">
+              <input type="text" class="form-control" name="lastName">
+          </div>
+      </div>
+      
+        <div class="form-group">
+            <label class="col-md-3 control-label">UserName</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="username">
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Password</label>
+          <div class="col-md-9">
+              <input type="password" class="form-control" name="password" />
+          </div>
+      </div>
+      <div class="form-group">
+          <label class="col-md-3 control-label">Confirm password</label>
+          <div class="col-md-9">
+              <input type="password" class="form-control" name="confirmPassword" />
+          </div>
+      </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Country</label>
+            <div class="col-md-9">
+                <select class="form-control" name="country" id="country">
+                    <option value="">Select your country</option>
+                    <option value="Viet Nam">Viet Nam</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Laos">Laos</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Phone</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="phone">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-1 col-md-7">
+                <label class="radio-inline">
+                  <input type="radio" name="rdGender" id="rdMale" checked>Male
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="rdGender" id="rdFemale">Female
+                </label> 
+              </div>
+            </div>
+          
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <div style="font-size:15pt" id="messages"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-9 col-md-offset-3">
+                <button type="submit" style="font-size:15pt" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+  
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').bootstrapValidator({
+                container: '#messages',
+                excluded: ':disabled',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    firstName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first Name'
+                            },
+                            regexp: {
+                                regexp: /^[a-z\s]+$/i,
+                                message: 'The first name can consist of alphabetical characters and spaces only'
+                            }
+                        }
+                    },
+                    lastName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your last Name'
+                            },
+                            regexp: {
+                                regexp: /^[a-z\s]+$/i,
+                                message: 'The last name can consist of alphabetical characters and spaces only'
+                            }
+                        }
+                    },
+                    username: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your User Name '
+                            },
+                            regexp: {
+                            regexp: /^\w{5,12}$/i,
+                            message: 'The User Name can contain alphanumeric and from 5 to 12 characters',
+                            },
+                        }
+                    },
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Password is required and cannot be empty'
+                            },
+                            stringLength: {
+                                min: 5,
+                                message: 'Password has at least 5 characters'
+                            },
+                            regexp: {
+                                regexp: /^([a-z]+[0-9]+|([0-9]+[a-z]+))$/i,
+                                message: 'Password must contain both alphabet characters and numbers'
+                            },
+                            identical: {
+                                field: 'confirmPassword',
+                                message: 'Please enter the same value with confirm password'
+                            }
+                        }
+                    },
+                    confirmPassword: {
+                        validators: {
+                            identical: {
+                                field: 'password',
+                                message: 'The password and its confirm are not the same'
+                            }
+                        }
+                    },
+                    country: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please select your country'
+                            }
+                        }
+                    },
+                    message: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please tell us what can we serve you ?'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your phone number'
+                            },
+                            regexp: {
+                                regexp: /^\d{10,11}$/i,
+                                message: 'Phone number from 10 - 11 number'
+                            }
+                        }
+                    },
+                    
+                }
+                
+            });
+            
+        });
+
+    </script>
+
+          
+<marquee class="footer" style="clear:both; font-size:15pt"> 
+    <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
+    <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
+    <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
+  </marquee>
+    
+</body>
+</html>

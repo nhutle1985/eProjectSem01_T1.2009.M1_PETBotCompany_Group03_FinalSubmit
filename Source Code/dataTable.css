@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+  }
+.nav {
+  background-color: plum;
+  font-weight: bold;
+  height:30px; 
+}
+
+.nav a {
+  float:left;
+  color: black; 
+  font-weight: bold;
+  height: 25px;
+  padding: 5px 0px;
+  font-size:15pt;
+  width:16.66%;
+  text-decoration: none;
+  text-align:center;
+}
+.nav a:hover {
+  height:30px;
+  background-color:greenyellow;
+  color:white;  
+}
+.nav a.active{
+height: 30px;
+border: 2px solid green; 
+background-color:green;
+color:white;   
+}
+h4 { 
+  background-color: plum;
+  text-align:center;
+  color:black;
+  font-family: verdana,sans-serif;
+  height:30px; 
+  padding: 5px;
+  border-radius: 10px 20px 10px;
+}
+.companyName {
+  padding: 15px 0px; 
+  text-align: center;
+  font-family: 'Ultra', serif;
+  background-image: linear-gradient(to right, orange,yellow,lightseagreen); 
+  font-size: 40pt;height: 100px; 
+  color:teal;
+}
+  .row::after  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border-top: 1px solid black;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  display: relative;
+}
+.bottom {
+  display:absolute;
+  bottom: 0;
+  padding: 0px 30px;
+  
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+table.dataTable.display tbody tr.odd > .sorting_1, table.dataTable.order-column.stripe tbody tr.odd > .sorting_1 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even > .sorting_1, table.dataTable.order-column.stripe tbody tr.even > .sorting_1 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.odd > .sorting_2, table.dataTable.order-column.stripe tbody tr.odd > .sorting_2 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even > .sorting_2, table.dataTable.order-column.stripe tbody tr.even > .sorting_2 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.odd > .sorting_3, table.dataTable.order-column.stripe tbody tr.odd > .sorting_3 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even > .sorting_3, table.dataTable.order-column.stripe tbody tr.even > .sorting_3 {
+  background-color: white;
+}
+table.dataTable.display tbody tr.even.selected > .sorting_1, table.dataTable.order-column.stripe tbody tr.even.selected > .sorting_1 {
+  background-color: white;
+}
+table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
+  background-color: greenyellow;
+}
+
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color:orangered;
+  font-size: 12pt; 
+  font-weight: bold;
+  font-family: verdana;
+}
+.dataTables_wrapper .dataTables_filter input:focus {
+  font-size:120%;
+  background-color:greenyellow;
+}
+td{
+    width:15%;
+    text-align:center;
+   }
+
+.des{
+    width:40%;
+  }
+  .dropbtn {
+    text-align:center; 
+    font-size:15pt;
+    background-color:orange; 
+    font-weight: bold;
+    border-radius: 20px;
+    width:100%;
+    cursor: pointer;
+    }
+  .dropbtn.active {
+      text-align:center; 
+      font-size:15pt;
+      background-color: green; 
+      font-weight: bold;
+      border-radius: 20px;
+      width:100%;
+      cursor: pointer;color:white;
+      }
+  .dropbtn2 {
+        text-align:center; 
+        font-size:15pt;
+        background-color:lightseagreen; 
+        font-weight: bold;
+        border-radius: 20px;
+        width:100%;
+        cursor: pointer;
+        }
+  .dropbtn2.active {
+          text-align:center; 
+          font-size:15pt;
+          background-color:green; 
+          font-weight: bold;
+          border-radius: 20px;
+          width:100%;
+          cursor: pointer;color:white;
+          }
+  .dropdown {
+    
+    position: relative;
+    display: flex;
+    }
+    
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gainsboro;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    }
+  .dropdown-content a.active {
+      color: white;
+      padding: 10px;
+      background-color:green;
+      text-decoration: none;
+      display: block;
+      }
+    
+  .dropdown-content a:hover {background-color: greenyellow}
+    
+  .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+    background-color: greenyellow;
+    }
+    .dropdown:hover .dropbtn2 {
+        background-color: greenyellow;
+        }
+td.pharma {
+    text-align:center;
+    border-radius: 20px; 
+    font-size:15pt;
+    background-color:khaki; 
+    font-weight: bold;
+}
+td.active a {
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:green; 
+  font-weight: bold;
+  color:white;
+  width:100%;
+  display:block;
+  text-align:center;
+}
+td.active {
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:green; 
+  font-weight: bold;
+  color:white;
+  width:100%;
+  text-align:center;
+  display:block;
+}
+.dropdown td.active a {
+  text-align:center;
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:green; 
+  font-weight: bold;
+  color:white;
+  width:100%;
+}
+td.pharma:hover {
+    text-align:center;
+    border-radius: 20px; 
+    font-size:15pt;
+    background-color:greenyellow; 
+    font-weight: bold;
+    color:white;
+}
+td.industry {
+    text-align:center;border-radius: 20px; font-size:15pt;background-color:lightcoral; font-weight: bold;
+}
+td.industry.active {
+  text-align:center;border-radius: 20px; font-size:15pt;background-color:green; font-weight: bold; color:white;
+}
+td.industry:hover {
+    text-align:center;border-radius: 20px; font-size:15pt;background-color:greenyellow; font-weight: bold;color:white;
+}
+td.honey {
+    text-align:center;border-radius: 20px; font-size:15pt;background-color:lightblue; font-weight: bold; 
+}
+
+td.honey:hover {
+    text-align:center;border-radius: 20px; font-size:15pt;background-color:greenyellow; font-weight: bold;color:white;
+}
+h4:hover { 
+    background-color: greenyellow;
+    color:white;
+    text-align:center;
+    
+    font-family: verdana,sans-serif;
+    height:30px; 
+    padding: 5px;
+    border-radius: 10px 20px 10px;
+  }
+  h4.active {
+    border: 2px solid green;
+    background-color:green;
+    color: white;
+    height:30px;
+    text-align: center;
+    border-radius: 10px 20px 10px;
+    }
+.pro{
+  width:300px; height:300px; 
+}
+.col-5, .col-7 {
+  border:none;
+}
+td a {
+  text-decoration:none; color:black;
+}
+td a:hover {
+  text-decoration:none; color:white;
+}
+.footer {
+display:block;
+  bottom:0;
+  height: 40px;
+  padding-top: 10px; 
+  font-family: verdana;
+  background-image: linear-gradient(to right, orange,yellow,lightseagreen);  
+}
+.color {background-image: linear-gradient(to bottom,white, lightyellow, lemonchiffon,white);height:850px}

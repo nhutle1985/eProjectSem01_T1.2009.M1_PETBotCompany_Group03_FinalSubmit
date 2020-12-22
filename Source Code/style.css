@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+  }
+.nav {
+  background-color: plum;
+  font-weight: bold;
+  height:30px; 
+}
+
+.nav a {
+  float:left;
+  color: black; 
+  font-weight: bold;
+  height: 25px;
+  padding: 5px 0px;
+  font-size:15pt;
+  width:16.66%;
+  text-decoration: none;
+  text-align:center;
+
+
+}
+.nav a:hover {
+  height:30px;
+  background-color:greenyellow;
+  color:white;  
+}
+.nav a.active{
+height: 30px;
+border: 2px solid green; 
+background-color:green;
+color:white;   
+}
+h4 { 
+  background-color: plum;
+  text-align:center;
+  color:black;
+  font-family: verdana,sans-serif;
+  height:30px; 
+  padding: 5px;
+  border-radius: 10px 20px 10px;
+}
+.companyName {
+  padding: 15px 0px; 
+  text-align: center;
+  font-family: 'Ultra', serif;
+  background-image: linear-gradient(to right, orange,yellow,lightseagreen); 
+  font-size: 40pt;height: 100px; 
+  color:teal;
+}
+.row {
+  display:block; 
+  height: 100%;
+  }
+  .row::after  {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    border-top: 1px solid black;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+.container {
+position: relative;
+width:100%;
+margin:auto;
+}
+.columnP {
+    float: left;
+    width: 250px;
+    padding: 5px;
+    display: relative;
+    
+  }
+.bottom {
+    display:absolute;
+    bottom: 0;
+    text-align:center;
+    
+  }
+/* Hide the images by default */
+.mySlides {
+display: none;
+vertical-align: center;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color:black;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: yellow;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+border-bottom: 2px solid yellowgreen;
+padding: 2px 16px;
+font-size: 15pt;
+color:black;
+}
+
+
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 14.28%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+table {
+width:100%;
+
+
+}
+.dropbtn {
+text-align:center; 
+font-size:15pt;
+background-color:orange; 
+font-weight: bold;
+border-radius: 20px;
+width:100%;
+cursor: pointer;
+}
+.dropbtn2 {
+  text-align:center; 
+  font-size:15pt;
+  background-color:lightseagreen; 
+  font-weight: bold;
+  border-radius: 20px;
+  width:100%;
+  cursor: pointer;
+  }
+.dropdown {
+width:100%;
+position: relative;
+display: flex;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: gainsboro;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 10px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {background-color: greenyellow}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color: greenyellow;
+}
+.dropdown:hover .dropbtn2 {
+  background-color: greenyellow;
+  }
+td.pharma {
+  text-align:center;
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:khaki; 
+  font-weight: bold;
+}
+td.pharma:hover {
+  text-align:center;
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:greenyellow; 
+  font-weight: bold;
+  color:white;
+}
+td a {
+  text-decoration:none; color:black
+}
+td a:hover {
+  text-decoration:none; color:white;
+}
+td.active {
+  text-align:center;
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:green; 
+  font-weight: bold;
+  color:white;
+  width:100%;
+  display:block;
+}
+td.active a {
+  border-radius: 20px; 
+  font-size:15pt;
+  background-color:green; 
+  font-weight: bold;
+  color:white;
+  width:100%;
+  display:block;
+  text-align:center;
+}
+td.industry {
+  text-align:center;border-radius: 20px; font-size:15pt;background-color:lightcoral; font-weight: bold;
+}
+td.industry:hover {
+  text-align:center;border-radius: 20px; font-size:15pt;background-color:greenyellow; font-weight: bold;
+}
+td.honey {
+  text-align:center;border-radius: 20px; font-size:15pt;background-color:lightblue; font-weight: bold; 
+}
+td.honey:hover {
+  text-align:center;border-radius: 20px; font-size:15pt;background-color:greenyellow; font-weight: bold;
+}
+h4:hover { 
+  background-color: greenyellow;
+  text-align:center;
+  color:white;
+  font-family: verdana,sans-serif;
+  height:30px; 
+  padding: 5px;
+  border-radius: 10px 20px 10px;
+}
+h4.active {
+  border: 2px solid green;
+  background-color:green;
+  color: white;
+  height:30px;
+  text-align: center;
+  border-radius: 10px 20px 10px;
+  }
+.footer {
+  bottom:0;
+  width:100%;
+  height: 40px;
+  padding-top: 10px; 
+  font-family: verdana;
+  background-image: linear-gradient(to right, orange,yellow,lightseagreen);  
+}
+.color {background-image: linear-gradient(to bottom,white, lightyellow, lemonchiffon,white);height:850px}

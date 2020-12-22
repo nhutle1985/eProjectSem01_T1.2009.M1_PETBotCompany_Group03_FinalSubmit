@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="URG.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="dataTable.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <script>
+      $(document).ready( function () {
+      $('#table_id').DataTable();
+  });
+  </script>
+
+
+
+</head>
+<body>
+  <div class="companyName"> PETBot COMPANY</div>
+
+    <nav class="nav">
+        <a href="Home.html"> HOME </a>
+        <a href="Product.html" class="active"> PRODUCT </a>
+        <a href="ContactUs.html"> CONTACT US </a>
+        <a href="CreateAcc.html"> REGISTER </a>
+        <a href="login.html"> LOGIN </a>
+        <a href="SiteMap.html"> SITE MAP </a>
+    </nav>
+    
+    <div class="row">
+        <div class="col-2 color">
+          <table style="border-collapse: separate; border-spacing: 20px;">
+            <tr class="dropdown">
+              <td class="active">Food and Sauce</td>
+              <td class="dropdown-content">
+              <a class="active" href="Food_bottle.html" style="text-align:center; font-size:13pt">Food bottle</a>
+              <a href="Food_jars.html" style="text-align:center; font-size:13pt">Food jars</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="pharma"><a href="Pharma.html">Pharmaceutical</a></td>
+            </tr>
+            <tr class="dropdown">
+              <td class="dropbtn2" >Healthcare</td>
+              <td class="dropdown-content">
+                <a href="Healthcare_bottle.html" style="text-align:center; font-size:13pt">Healthcare bottle</a>
+                <a href="Healthcare_jars.html" style="text-align:center; font-size:13pt">Healthcare jars</a>
+                </td>
+            </tr>
+            <tr>
+              <td class="industry"><a href="Industry.html">Industry</a></td>
+            </tr>
+            <tr class="dropdown">
+              <td class="dropbtn honey"><a href="Honey.html">Honey jars</a></td>
+            </tr>
+          </table>
+                        
+        </div>
+        <div class="col-8">
+          <div>
+            <img src="Image/foodbottle.jpg" class="col-5 pro">
+          <div style="float: left" class="col-7">
+            <h2>FOOD -- PET Woozy/Grenadine Bottles</h2>
+          <a>These bottles are ideal for syrup, marinades, sauces, and condiments.</a>
+          <ul>
+              <li>PET bottles</li>
+              <li>LDPE dripper fitments</li>
+              <li>Meets FDA standards.</li>
+              <li><b>Bottles & fitments sold separately</b></li>
+              <li><b>Caps sold separately</b></li>
+          </ul>
+          
+        </div>
+        </div>
+        <table id="table_id" style="width:100%" class="dataTable display datatables">
+          <thead>
+              <tr>
+                <th>Product</th>
+                <th>Description</th>
+                <th>Catalog Pg.</th>
+                <th>Price (USD)</th>
+                <th>Stock</th>
+                
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+               <td><img src="Image/bottlesfood.jpg" width="55%"></td>
+                <td class="des">5 oz. Clear PET Woozy Sauce Bottle with 24/414 Neck(Cap & Fitment Sold Separately)</td>
+                <td>page 3</td>
+                <td>1.0</td>
+                <td>Available</td>
+                
+            </tr>
+            <tr>
+                <td><img src="Image/bottlesfood1.jpg" width="55%"</td>
+                <td class="des">5 oz. White PET Woozy Bottle with 24/414 Neck(Cap & Fitment Sold Separately)</td>
+                <td>page 3</td>
+                <td>1.2</td>
+                <td>Available</td>
+                
+            </tr>
+            <tr>
+                <td><img src="Image/bottlesfood2.jpg" width="55%"></td>
+                <td class="des">10 oz. Clear PET Woozy Sauce Bottle with 24/414 Neck</td>
+                <td>page 3</td>
+                <td>1.4</td>
+                <td>Available</td>
+                
+            </tr>
+            <tr>
+                <td><img src="Image/bottlesfood3.jpg" width="55%"></td>
+                <td class="des">10 oz. Clear Grenadine Bottle with 28mm PCO Neck</td>
+                <td>page 3</td>
+                <td>1.6</td>
+                <td>Available</td>
+                
+            </tr>
+          </table>
+        </div> 
+          <div class="col-2 color">
+            <a style="text-decoration: none;" href="Cart-bottle.html"><h4><i class="fas fa-shopping-cart"></i> Quick Order</h4></a>
+            <a style="text-decoration: none;" href="Catalogue.html"><h4>Our Catalogue</h4></a>
+            <a style="text-decoration: none;" 
+            href="mailto:Nhutlchts2009030@fpt.edu.vn?cc=davidnhut2001@gmail.com&subject=Feedback%20from%20customer!&body=Dear%20Customer%20Service!">
+            <h4>Feedback</h4></a>
+            <a style="text-decoration: none;" href="Gallery.html"><h4>Our Gallery</h4></a>
+          </div>
+    </div>
+    
+    <marquee class="footer" style="clear:both; font-size:15pt"> 
+      <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
+      <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
+      <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
+    </marquee>
+</body>
+</html>

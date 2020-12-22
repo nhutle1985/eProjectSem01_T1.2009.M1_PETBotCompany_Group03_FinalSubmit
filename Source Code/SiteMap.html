@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="URG.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+ul, #myUL {
+  list-style-type: none;
+}
+ul li {
+  padding-left:50px;
+}
+#myUL {
+  margin: 0;
+  padding: 0px 30px;
+  min-height:520px;
+  max-height: 800px;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);  
+  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
+
+
+</head>
+<body>
+  <div style="padding: 15px 0px; text-align: center;font-family: 'Ultra', serif;background-image: linear-gradient(to right, orange,yellow,lightseagreen); font-size: 40pt;height: 100px; color:teal"> PETBot COMPANY</div>
+
+    <nav class="nav">
+        <a href="Home.html"> HOME </a>
+        <a href="Product.html"> PRODUCT </a>
+        <a href="ContactUs.html"> CONTACT US </a>
+        <a href="CreateAcc.html"> REGISTER </a>
+        <a href="login.html"> LOGIN </a>
+        <a href="SiteMap.html"class="active"> SITE MAP </a>
+    </nav>
+    
+    <div class="row">
+        <div class="col-2 color">
+          <table style="border-collapse: separate; border-spacing: 20px;">
+            <tr class="dropdown">
+              <td class="dropbtn">Food and Sauce</td>
+              <td class="dropdown-content">
+              <a href="Food_bottle.html" style="text-align:center; font-size:13pt">Food bottle</a>
+              <a href="Food_jars.html" style="text-align:center; font-size:13pt">Food jars</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="pharma"><a href="Pharma.html">Pharmaceutical</a></td>
+            </tr>
+            <tr class="dropdown">
+              <td class="dropbtn2" >Healthcare</td>
+              <td class="dropdown-content">
+                <a href="Healthcare_bottle.html" style="text-align:center; font-size:13pt">Healthcare bottle</a>
+                <a href="Healthcare_jars.html" style="text-align:center; font-size:13pt">Healthcare jars</a>
+                </td>
+            </tr>
+            <tr>
+              <td class="industry"><a href="Industry.html">Industry</a></td>
+            </tr>
+            <tr class="dropdown">
+              <td class="dropbtn honey"><a href="Honey.html">Honey jars</a></td>
+            </tr>
+          </table>
+                        
+        </div>
+        <div style="background-color: lavender;height:850px" class="col-8">
+          <ul id="myUL">
+          <li><h2>HOME</h2>
+          <ul>
+            <li><h3 class="caret">PRODUCT</h3>
+                    <ul class="nested">
+                    <li><h3 class="caret">Food and beverage</h3>
+                            <ul class="nested">
+                                <li><a href="Food_bottle.html"><h3>Food bottle</h3></a></li>
+                                <li><a href="Food_jars.html"><h3>Food jars</h3></a></li>
+                            </ul>
+                          </li>
+                    <li><a href="Pharma.html"><h3>Pharmaceutical</h3></a></li>
+                    <li><h3 class="caret">Health care</h3>
+                          <ul class="nested">
+                            <li><a href="Healthcare_bottle.html"><h3> Healthcare bottle</h3></a></li>
+                            <li><a href="Healthcare_jars.html"><h3>Healthcare jars</h3></a></li>
+                          </ul>
+                        </li>
+                    <li><a href="Industry.html"><h3>Industry</h3></a></li>
+                    <li><a href="Honey.html"><h3>Honey jars</h3></a></li>
+                  </ul>
+          </li>
+            <li><a  href="ContactUs.html"><h3>CONTACT US</h3></a></li>
+            <li><a  href="CreateAcc.html"><h3>REGISTER</h3></a></li>
+            <li><a  href="login.html"><h3>LOGIN</h3></a></li>
+            <li><a  href="SiteMap.html"><h3>SITE MAP</h3></a></li>
+            <li><a  href="Cart-bottle.html"><h3>QUICK ORDER</h3></a></li>
+            <li><a  href="Catalogue.html"><h3>OUR CATALOGUE</h3></a></li>
+            <li><a  href="ContactUs.html"><h3>FEEDBACK</h3></a></li>
+            <li><a  href="Gallery.html"><h3>OUR GALLERY</h3></a> </li>
+          </ul>
+          </li>
+          </ul>
+        </div>
+          <div class="col-2 color">
+            <a style="text-decoration: none;" href="Cart-bottle.html"><h4><i class="fas fa-shopping-cart"></i> Quick Order</h4></a>
+            <a style="text-decoration: none;" href="Catalogue.html"><h4>Our Catalogue</h4></a>
+            <a style="text-decoration: none;" 
+            href="mailto:Nhutlchts2009030@fpt.edu.vn?cc=davidnhut2001@gmail.com&subject=Feedback%20from%20customer!&body=Dear%20Customer%20Service!">
+            <h4>Feedback</h4></a>
+            <a style="text-decoration: none;" href="Gallery.html"><h4>Our Gallery</h4></a>
+          </div>
+                   
+            <marquee class="footer" style="clear:both; font-size:15pt"> 
+              <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
+              <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
+              <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
+            </marquee>
+           
+    </div>
+    
+    
+    <script>
+      var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="URG.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   <link rel="stylesheet" href="dataTable.css">
+   <link rel="stylesheet" href="modal.css">
+   <script>
+    $(document).ready( function () {
+    $('#table_id').DataTable();
+});
+</script>
+<style>
+
+</style>
+</head>
+<body>
+  <div style="padding: 15px 0px; text-align: center;background-image: linear-gradient(to right, orange,yellow,lightseagreen); font-size: 40pt;height: 100px;font-family: 'Ultra', serif; color:teal"> PETBot COMPANY</div>
+
+    <nav class="nav">
+        <a href="Home.html"> HOME </a>
+        <a href="Product.html"> PRODUCT </a>
+        <a href="ContactUs.html"> CONTACT US </a>
+        <a href="CreateAcc.html"> REGISTER </a>
+        <a href="login.html"> LOGIN </a>
+        <a href="SiteMap.html"> SITE MAP </a>
+    </nav>
+    
+    <div class="row">
+        <div class="col-2">
+            <table style="border-collapse: separate; border-spacing: 20px;">
+                <tr class="dropdown">
+                  <td class="dropbtn">Food and Sauce</td>
+                  <td class="dropdown-content">
+                  <a href="Food_bottle.html" style="text-align:center; font-size:13pt">Food bottle</a>
+                  <a href="Food_jars.html" style="text-align:center; font-size:13pt">Food jars</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="pharma"><a href="Pharma.html">Pharmaceutical</a></td>
+                </tr>
+                <tr class="dropdown">
+                  <td class="dropbtn2" >Healthcare</td>
+                  <td class="dropdown-content">
+                    <a href="Healthcare_bottle.html" style="text-align:center; font-size:13pt">Healthcare bottle</a>
+                    <a href="Healthcare_jars.html" style="text-align:center; font-size:13pt">Healthcare jars</a>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="industry"><a href="Industry.html">Industry</a></td>
+                </tr>
+                <tr class="dropdown">
+                  <td class="dropbtn honey"><a href="Honey.html">Honey jars</a></td>
+                </tr>
+              </table>
+                        
+        </div>
+        <div class="col-8" style="background-color: lavender;">
+            <h3><u>Order goods easily with</u></h3>
+            <ol style="font-size:15pt; color:black;text-indent: 5px;">
+                <li>Search by category such as food, industry, healthcare, honey and pharmaceutical </li>
+                <li>Choose your goods and click Order button </li>
+                <li>Change the quantity of goods in the Your Cart that you need to order</li>
+                <li>Continue choose another goods and do the same step 2 and 3</li>
+                <li>Finally, click the Order button in the Your Cart to finish and send request to us.</li>
+            </ol>
+        <table id="table_id" style="width:100%" class="dataTable display datatables">
+          <thead>
+              <tr>
+                  <th>Product</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Price(USD)</th>
+                  <th></th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr class="main-product">
+               <td class="img-product"><img class="img-prd" src="Image/bottlesfood.jpg" alt="" width="55%"></td>
+                <td class="des content-product-h3">5 oz. Clear PET Woozy Sauce Bottle with 24/414 Neck(Cap & Fitment Sold Separately)</td>
+                <td>Food</td>
+                <td class="price">1.0</td>
+                <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+            </tr>
+            <tr class="main-product">
+                <td class="img-product"><img class="img-prd" src="Image/bottlesfood1.jpg" alt="" width="55%"</td>
+                <td class="des content-product-h3">5 oz. White PET Woozy Bottle with 24/414 Neck(Cap & Fitment Sold Separately)</td>
+                <td>Food</td>
+                <td class="price">1.2</td>
+          
+                <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+            </tr>
+            <tr class="main-product">
+                <td class="img-product"><img class="img-prd" src="Image/bottlesfood2.jpg" alt="" width="55%"></td>
+                <td class="des content-product-h3">10 oz. Clear PET Woozy Sauce Bottle with 24/414 Neck</td>
+                <td>Food</td>
+                <td class="price">1.4</td>
+                
+                <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+            </tr>
+            <tr class="main-product">
+                <td class="img-product"><img class="img-prd" src="Image/bottlesfood3.jpg" alt="" width="55%"></td>
+                <td class="des content-product-h3">10 oz. Clear Grenadine Bottle with 28mm PCO Neck</td>
+                <td>Food</td>
+                <td class="price">1.6</td>
+                
+                <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+            </tr>
+            <tr class="main-product">
+              <td class="img-product"><img class="img-prd" src="Image/foodjags1.jpg" alt="" width="80%"></td>
+               <td class="des content-product-h3">Tear Drop Container & Lid</td>
+               <td>Food</td>
+               <td class="price">1.4</td>
+           
+               <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+           </tr class="main-product">
+               <td class="img-product"><img class="img-prd" src="Image/foodjags2.jpg" alt="" width="80%"</td>
+               <td class="des content-product-h3">Round PVC Canister & Lid</td>
+               <td>Food</td>
+               <td class="price">1.5</td>
+              
+               <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+           </tr>
+           <tr class="main-product">
+               <td class="img-product"><img class="img-prd" src="Image/foodjags3.jpg" alt="" width="80%"></td>
+               <td class="des content-product-h3">Clear PET Round Jars with Caps</td>
+               <td>Food</td>
+               <td class="price">1.5</td>
+             
+               <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+           </tr>
+           <tr class="main-product">
+               <td class="img-product"><img class="img-prd" src="Image/foodjags4.jpg" alt="" width="80%"></td>
+               <td class="des content-product-h3">Nalgene® Kitchen Storage Containers</td>
+               <td>Food</td>
+               <td class="price">2.5</td>
+          
+               <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+           </tr>
+           <tr class="main-product">
+            <td class="img-product"><img class="img-prd" src="Image/healthcare(push)01.PNG" alt="" width="70%"></td>
+             <td class="des content-product-h3">8 oz. Natural Bottle and Pump 28mm Cap</td>
+             <td>Heathcare</td>
+             <td class="price">11.0</td>
+             <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+         </tr>
+         <tr class="main-product">
+            <td class="img-product"><img class="img-prd" src="Image/healthcare(push)02.PNG" alt="" width="70%"></td>
+            <td class="des content-product-h3">12 oz. Cristal Contempo Spray Bottles</td>
+            <td>Heathcare</td>
+            <td class="price">12.5</td>
+            <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+        </tr>
+         <tr class="main-product">
+             <td class="img-product"><img class="img-prd" src="Image/healthcare(push)02.PNG" alt="" width="70%"</td>
+             <td class="des content-product-h3">16 oz. Natural HDPE Bottle & Pump</td>
+             <td>Heathcare</td>
+             <td class="price">13.5</td>
+             <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+         </tr>
+         <tr class="main-product">
+             <td class="img-product"><img class="img-prd" src="Image/healthcare(push)03.PNG" alt="" width="70%"></td>
+             <td class="des content-product-h3">1 Gallon Natural HDPE Jug with Handle & Pump</td>
+             <td>Heathcare</td>
+             <td class="price">14.5</td>
+             <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+         </tr>
+         
+         <tr class="main-product">
+          <td class="img-product"><img class="img-prd" src="Image/healcare1.jpg" alt="" width="80%"></td>
+           <td class="des content-product-h3">Black Dome Double Wall Jars & Caps</td>
+           <td>Healthcare</td>
+           <td class="price">14.0</td>
+           <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+       </tr>
+       <tr class="main-product">
+           <td class="img-product"><img class="img-prd" src="Image/healcare2jpg.jpg" alt="" width="80%"</td>
+           <td class="des content-product-h3">Amber PET Straight Sided Jars</td>
+           <td>Healthcare</td>
+           <td class="price">15.5</td>
+           <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+       </tr>
+       <tr class="main-product">
+           <td class="img-product"><img class="img-prd" src="Image/healcare3.jpg" alt="" width="80%"></td>
+           <td class="des content-product-h3">4 oz. Amber PET Straight Sided Jar with 70/400 Neck</td>
+           <td>Healthcare</td>
+           <td class="price">11.5</td>
+           <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+       </tr>
+       <tr class="main-product">
+           <td class="img-product"><img class="img-prd" src="Image/healcare3jpg.jpg" alt="" width="80%"></td>
+           <td class="des content-product-h3">3 oz. Amber PET Straight Sided Jar with 58/400 Neck</td>
+           <td>Healthcare</td>
+           <td class="price">12.5</td>
+           <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+       </tr>
+       <tr class="main-product">
+        <td class="img-product"><img class="img-prd" src="Image/honey(a).jpg" width="80%"></td>
+         <td class="des content-product-h3">8 oz. (Honey Weight) PET Honey Bear Bottle with 38/400 Neck</td>
+         <td>Honey</td>
+         <td class="price">14.0</td>
+         <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+     </tr>
+     <tr class="main-product">
+         <td class="img-product"><img class="img-prd" src="Image/honey(b).jpg" width="80%"</td>
+         <td class="des content-product-h3">16 oz. (Honey Weight) PET Tall Honey Bear Bottle with 38/400 Neck</td>
+         <td>Honey</td>
+         <td class="price">15.5</td>
+         <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+     </tr>
+     <tr class="main-product">
+         <td class="img-product"><img class="img-prd" src="Image/honey(c).jpg" width="80%"></td>
+         <td class="des content-product-h3">16 oz. (Honey Weight) Ribbed Hourglass Bottle with 38/400 Neck</td>
+         <td>Honey</td>
+         <td class="price">11.5</td>
+         <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+     </tr>
+     <tr class="main-product">
+         <td class="img-product"><img class="img-prd" src="Image/honey(d).jpg" width="80%"></td>
+         <td class="des content-product-h3">32 oz. (Honey Weight) LDPE Honey Bear Bottle with 38/400 Neck</td>
+         <td>Honey</td>
+         <td class="price">12.5</td>
+         <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+     </tr>
+     <tr class="main-product">
+      <td class="img-product"><img class="img-prd" src="Image/industies2.jpg" width="80%"></td>
+       <td class="des content-product-h3">16 oz. Round Natural Jug with 28/410 Cap</td>
+       <td>Industry</td>
+       <td class="price">14.0</td>
+       <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+   </tr>
+   <tr class="main-product">
+       <td class="img-product"><img class="img-prd" src="Image/industry01.PNG" width="60%"</td>
+       <td class="des content-product-h3">32 oz. Round White Jug with 28/410 Cap</td>
+       <td>Industry</td>
+       <td class="price">15.5</td>
+       <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+   </tr>
+   <tr class="main-product">
+       <td class="img-product"><img class="img-prd" src="Image/industies3.jpg" width="80%"></td>
+       <td class="des content-product-h3">1/2 Gallon Round Natural Jug with 38/400 Cap</td>
+       <td>Industry</td>
+       <td class="price">11.5</td>
+       <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+   </tr>
+   <tr class="main-product">
+       <td class="img-product"><img class="img-prd" src="Image/industies4.jpg" width="80%"></td>
+       <td class="des content-product-h3">1 Gallon Square Natural Jug with 38/400 Cap</td>
+       <td>Industry</td>
+       <td class="price">1.5</td>
+       <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+   </tr>
+   <tr class="main-product">
+    <td class="img-product"><img class="img-prd" src="Image/pharma1.png" width="80%"></td>
+     <td class="des content-product-h3">1 oz./30cc White Wide Mouth Packer with 33/400 Neck</td>
+     <td>Pharmaceutical</td>
+     <td class="price">5.0</td>
+     <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+ </tr>
+ <tr class="main-product">
+     <td class="img-product"><img class="img-prd" src="Image/pharma2.jpg" width="80%"</td>
+     <td class="des content-product-h3">2 oz./60cc White Wide Mouth Packer with 33/400 Neck</td>
+     <td>Pharmaceutical</td>
+     <td class="price">15.5</td>
+     <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+ </tr>
+ <tr class="main-product">
+     <td class="img-product"><img class="img-prd" src="Image/pharma3.jpg" width="80%"></td>
+     <td class="des content-product-h3">4 oz./120cc White Wide Mouth Packer with 38/400 Neck</td>
+     <td>Pharmaceutical</td>
+     <td class="price">11.5</td>
+     <td><button type="button" class="btn btn-primary btn-cart">Order</button></td>
+ </tr>
+  </table>
+        
+      </div>
+          <div class="col-2">
+  
+      <button style="width:150px; vertical-align:center; border-radius: 10px 20px 10px; font-size: 15pt;position: fixed;
+      right: 0; top:50%" id="cart">
+        <i class="fa fa-shopping-basket"></i> Your Cart
+      </button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h5 class="modal-title">Your Cart</h5>
+            </div>
+            <div class="modal-body">
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">Product</span>
+                    <span class="cart-price cart-header cart-column">Price (USD)</span>
+                    <span class="cart-quantity cart-header cart-column">Quantity</span>
+                </div>
+                <div class="cart-items">
+                
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total:</strong>
+                    <span class="cart-total-price">0(USD)</span>
+                </div>
+            
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">Close</button>
+                <button type="button" class="btn btn-primary order">Order</button>
+            </div>
+        </div>
+              </div>
+            
+    </div>
+    </div>
+    <script src="main.js"></script>
+
+        
+        <marquee class="footer" style="clear:both; font-size:15pt"> 
+          <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
+          <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
+          <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
+        </marquee>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+      <style> 
+      .nav a {
+        padding-top:0px; 
+      }
+      .col-md-3, .col-md-5, .col-md-9, .col-md-11, .col-md-10, .col-md-12 {
+        border: none;
+      }
+      
+      </style>
+    </head>
+<body>
+  <div class="companyName" > PETBot COMPANY</div>
+
+  <nav class="nav">
+    <a href="Home.html"> HOME </a>
+    <a href="Product.html"> PRODUCT </a>
+    <a href="ContactUs.html" class="active"> CONTACT US </a>
+    <a href="CreateAcc.html"> REGISTER </a>
+    <a href="login.html"> LOGIN </a>
+    <a href="SiteMap.html"> SITE MAP </a>
+</nav>
+
+    <div class="container" style=" background-color: lavender;">
+    
+        <div class="col-md-5 col-md-offset-1" style="border:none;">
+          <h3 style="font-weight: 700 ;color: black;">PETBot COMPANY - Contact Us</h3> <br>
+          <p style="color: #555;"> We believe in good old fashioned service provided by real people. Contact PETBot Company and speak to our friendly and knowledgeable staff who can discuss your plastic packaging or custom moulding requirements.</p>
+          <br>
+          <p style="color: #555;">
+            <strong>PETBot COMPANY address.</strong><br>
+              590 Cach Mang Thang Tam street, ward 11, district 3, Hồ Chí Minh city <br>
+          </p>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.319350036688!2d106.66408561406833!3d10.786834792314465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2sFPT-Aptech%20Computer%20Education%20HCM!5e0!3m2!1svi!2s!4v1606897727108!5m2!1svi!2s" width="600" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <form action="javascript:alert('Thanks for your contact to Us. We will reply to you soon !');location.href='Home.html'"
+          class="col-md-5" id="contactForm" method="post" class="form-horizontal">
+          <div class="form-group">
+            <label class="col-md-3 control-label">First Name</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="firstName" autofocus>
+            </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Last name</label>
+          <div class="col-md-9">
+              <input type="text" class="form-control" name="lastName">
+          </div>
+      </div>
+      <div class="form-group">
+        <label class="col-md-3 control-label">Title</label>
+        <div class="col-md-9">
+            <input type="text" class="form-control" >
+        </div>
+    </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Email</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Country</label>
+            <div class="col-md-9">
+                <select class="form-control" name="country" id="country">
+                    <option value="">Select your country</option>
+                    <option value="Viet Nam">Viet Nam</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Cambodia">Cambodia</option>
+                    <option value="Laos">Laos</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3 control-label">Phone</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" name="phone">
+            </div>
+        </div>
+        
+          <div class="form-group">
+            <label class="col-md-3 control-label">Your Message:</label>
+            <div class="col-md-9">
+            <textarea  class="col-md-12" name="message"></textarea>
+        </div>
+          </div>
+        <div class="form-group">
+            <div class="col-md-10 col-md-offset-2">
+                <div style="font-size:15pt" id="messages"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-9 col-md-offset-3">
+                <button style="font-size:15pt" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+</div>
+    <script>
+        $(document).ready(function () {
+            $('#contactForm').bootstrapValidator({
+                container: '#messages',
+                excluded: ':disabled',
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    firstName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your first Name'
+                            },
+                            regexp: {
+                                regexp: /^[a-z\s]+$/i,
+                                message: 'The first name can consist of alphabetical characters and spaces only'
+                            }
+                        }
+                    },
+                    lastName: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your last Name'
+                            },
+                            regexp: {
+                                regexp: /^[a-z\s]+$/i,
+                                message: 'The last name can consist of alphabetical characters and spaces only'
+                            }
+                        }
+                    },
+                    email: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your email address '
+                            },
+                            regexp: {
+                                regexp: /^\w+[@]\w+[.]\w+([.]\w+)?$/i,
+                                message: 'Email is invalid !'
+                            }
+                        }
+                    },
+                    country: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please select your country'
+                            }
+                        }
+                    },
+                    message: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please tell us what can we serve you ?'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: 'Please enter your phone number'
+                            },
+                            regexp: {
+                                regexp: /^\d{10,11}$/i,
+                                message: 'Phone number from 10 - 11 number'
+                            }
+                        }
+                    },
+                    
+                }
+                
+            });
+            
+        });
+
+    </script>
+       
+       <marquee class="footer" style="clear:both; font-size:15pt"> 
+        <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
+        <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
+        <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
+      </marquee>
+
+
+  </body>
+</html>
