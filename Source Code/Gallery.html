@@ -15,6 +15,7 @@
   padding: 32px;
 }
 
+
 .row2 {
   display: -ms-flexbox; /* IE 10 */
   display: flex;
@@ -33,11 +34,11 @@
 
 .column img {
   margin-top: 8px;
-  width:150px;
+  
   margin:auto;
   display:block;
   padding: 5px 5px;
-  height:150px;
+  
 }
 
 /* Style the buttons */
@@ -113,34 +114,34 @@
             <p>Click on the buttons to change the grid view.</p>
             <button class="btn" onclick="one()">1</button>
             <button class="btn active" onclick="two()">2</button>
-            <button class="btn" onclick="three()">4</button>
+            <button class="btn" onclick="four()">4</button>
           </div>
           
           <!-- Photo Grid -->
           <div class="row2"> 
             <div class="column">
-              <img src="Image/foodjags5.jpg" title="Food jars" >
-              <img src="Image/Food bottle.jpg" title="Food bottle" >
-              <img src="Image/pharma1.png" title="Pharma jars" >
-              <img src="Image/Boston Spray.PNG" title="Boston Spray" >
+              <img style="width:50%" src="Image/foodjags5.jpg" title="Food jars" >
+              <img style="width:50%" src="Image/industry01.PNG" title="Industry bottle" >
+              <img style="width:50%" src="Image/pharma1.png" title="Pharma jars" >
+              <img style="width:50%" src="Image/Boston Spray.PNG" title="Boston Spray" >
             </div>
             <div class="column">
-              <img src="Image/pharma3.jpg" title="Pharma jars">
-              <img src="Image/industry.jpg" title="Industry bottle">
-              <img src="Image/industry01.PNG" title="Industry bottle">
-              <img src="Image/Cylinder bottle.PNG" title="Cylinder bottle" >
+              <img style="width:50%" src="Image/pharma3.jpg" title="Pharma jars">
+              <img style="width:70%" src="Image/industry.jpg" title="Industry bottle">
+              <img style="width:50%" src="Image/Food bottle.jpg" title="Food bottle">
+              <img style="width:50%" src="Image/Cylinder bottle.PNG" title="Cylinder bottle" >
             </div>
             <div class="column">
-              <img src="Image/healthcare bottle.jpg" title="Healthcare bottle" >
-              <img src="Image/healthcare jars.png" title="Healthcare jars" >
-              <img src="Image/foodjags1.jpg" title="Food jars">
-              <img src="Image/Squeezable Dispensers.PNG" title="Squeezable dispenser" >
+              <img style="width:70%" src="Image/healthcare bottle.jpg" title="Healthcare bottle" >
+              <img style="width:50%" src="Image/beautifull.jpg" title="Healthcare jars" >
+              <img style="width:50%" src="Image/foodjags1.jpg" title="Food jars">
+              <img style="width:60%" src="Image/Squeezable Dispensers.PNG" title="Squeezable dispenser" >
             </div> 
             <div class="column">
-              <img src="Image/Honey(food).jpg" title="Honey jars" >
-              <img src="Image/healcare2jpg.jpg" title="Healthcare jars" >
-              <img src="Image/honey(b).jpg" title="Honey jars">
-              <img src="Image/Spray bottle.PNG" title="Spray Bottle" >
+              <img style="width:70%" src="Image/Honey(food).jpg" title="Honey jars" >
+              <img style="width:50%" src="Image/healcare2jpg.jpg" title="Healthcare jars" >
+              <img style="width:50%" src="Image/honey(b).jpg" title="Honey jars">
+              <img style="width:60%" src="Image/Spray bottle.PNG" title="Spray Bottle" >
             </div>
           </div>
         </div>
@@ -177,7 +178,7 @@
       }
       
       // Four images side by side
-      function three() {
+      function four() {
         for (i = 0; i < elements.length; i++) {
           elements[i].style.msFlex = "25%";  // IE10
           elements[i].style.flex = "25%";
@@ -195,7 +196,7 @@
         });
       }
       </script>
-    <marquee class="footer" style="clear:both; font-size:15pt"> 
+    <marquee behavior='alternate' scrollamount='5' onmouseover='this.stop()' onmouseout='this.start()' class="footer" style="clear:both; font-size:15pt"> 
       <span style="text-align:center; float:left;color: darkmagenta; width: 20%"><i class="fas fa-phone-alt"></i> 028.999.999</span>
       <span style="text-align:center; float:left;color: darkmagenta; width: 30%"><i class="far fa-envelope"></i> Nhutlchts2009030@fpt.edu.vn</span>
       <span style="text-align:center; float:left;color: darkmagenta; width: 50%"><i class="fas fa-copyright"></i> The PETBot Company Copyright. All right reserved Privacy Statement</span>
